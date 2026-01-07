@@ -1,0 +1,11 @@
+@UrlShortenerApi_HostAddress = http://localhost:5072
+
+### URL Kısalt
+POST {{UrlShortenerApi_HostAddress}}/api/shorten
+Content-Type: application/json
+
+{
+  "url": "https://example.com/uzun-bir-link-adresi"
+}
+
+###
