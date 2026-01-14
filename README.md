@@ -10,16 +10,16 @@ Projenin temel amacı, kullanıcı deneyimini ön planda tutan, hızlı ve güve
 - **Kullanılabilirlik**: Modern, şık ve mobil uyumlu bir arayüz ile kolay kullanım.
 
 ### 🎨 Frontend (Arayüz)
-- **React.js**: Dinamik ve hızlı kullanıcı etkileşimi için.
-- **Vite**: Modern bir geliştirme ortamı ve hızlı yapılandırma.
-- **Custom CSS**: Glassmorphism ve dark mode efektleri içeren, premium bir tasarım.
-- **Lucide Icons**: Sade ve açıklayıcı ikon kütüphanesi.
+- **React.js**
+- **Vite**
+- **Custom CSS**
+- **Lucide Icons**
 
 ### ⚙️ Backend (Sunucu)
-- **.NET 10 (ASP.NET Core Web API)**: Yüksek performanslı ve ölçeklenebilir backend mimarisi.
-- **C#**: Güçlü ve tip güvenli programlama dili.
-- **MongoDB**: Hızlı veri okuma/yazma işlemleri için NoSQL veritabanı.
-- **RESTful API**: Standartlara uygun API uç noktaları.
+- **.NET 10 (ASP.NET Core Web API)**
+- **C#**
+- **MongoDB**
+- **RESTful API**
 
 ## ✨ Öne Çıkan Özellikler
 
