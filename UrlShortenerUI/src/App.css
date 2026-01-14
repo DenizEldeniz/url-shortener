@@ -168,15 +168,17 @@
   margin: 0.3rem;
   background: #6366f1;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.65rem 1rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
+  min-width: 7rem;
+  justify-content: center;
   transition: all 0.2s;
   display: flex;
   align-items: center;
-
+  gap: 0.5rem;
   white-space: nowrap;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   font-size: 0.95rem;
@@ -277,6 +279,19 @@
   margin-top: 1.75rem;
   padding-top: 1.5rem;
   border-top: 1px solid #374151;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .result-header {
@@ -327,9 +342,10 @@
 }
 
 .copy-button {
-  padding: 0.9rem 1.25rem;
+  padding: 0.65rem 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
+  min-width: 7rem;
   transition: all 0.2s;
   white-space: nowrap;
   display: flex;
