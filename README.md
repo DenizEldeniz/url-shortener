@@ -2,16 +2,12 @@
 
 Bu proje, uzun ve karmaşık web adreslerini (URL) daha kısa, paylaşılabilir ve yönetilebilir hale getiren modern bir web uygulamasıdır. Kullanıcılar linklerini kısaltabilir, kopyalayabilir ve linklerin kaç kez tıklandığını gerçek zamanlı olarak takip edebilirler.
 
-## 🎯 Projenin Amacı ve Hedefi
+## 🎯 Projenin Amacı
 
 Projenin temel amacı, kullanıcı deneyimini ön planda tutan, hızlı ve güvenilir bir URL kısaltma hizmeti sunmaktır.
 - **Hız**: Minimum gecikme ile anında URL kısaltma ve yönlendirme.
 - **Analiz**: Kısaltılan her link için tıklanma istatistiklerini sağlama.
 - **Kullanılabilirlik**: Modern, şık ve mobil uyumlu bir arayüz ile kolay kullanım.
-
-## 🚀 Kullanılan Teknolojiler
-
-Proje, güncel teknolojiler kullanılarak **Full-Stack** bir yaklaşımla geliştirilmiştir:
 
 ### 🎨 Frontend (Arayüz)
 - **React.js**: Dinamik ve hızlı kullanıcı etkileşimi için.
@@ -20,7 +16,7 @@ Proje, güncel teknolojiler kullanılarak **Full-Stack** bir yaklaşımla geliş
 - **Lucide Icons**: Sade ve açıklayıcı ikon kütüphanesi.
 
 ### ⚙️ Backend (Sunucu)
-- **.NET 8 (ASP.NET Core Web API)**: Yüksek performanslı ve ölçeklenebilir backend mimarisi.
+- **.NET 10 (ASP.NET Core Web API)**: Yüksek performanslı ve ölçeklenebilir backend mimarisi.
 - **C#**: Güçlü ve tip güvenli programlama dili.
 - **MongoDB**: Hızlı veri okuma/yazma işlemleri için NoSQL veritabanı.
 - **RESTful API**: Standartlara uygun API uç noktaları.
@@ -34,9 +30,6 @@ Proje, güncel teknolojiler kullanılarak **Full-Stack** bir yaklaşımla geliş
 
 ## 🛠️ Kurulum ve Çalıştırma
 
-1. **Gereksinimler**: .NET 8 SDK, Node.js ve MongoDB.
+1. **Gereksinimler**: .NET 10 SDK, Node.js, MongoDB
 2. **Backend**: `UrlShortenerApi` klasörüne gidin ve `dotnet run` komutunu çalıştırın.
-3. **Frontend**: `UrlShortenerUI` klasörüne gidin, `npm install` ve ardından `npm run dev` komutlarını çalıştırın.
-
----
-*Bu proje, Deniz Eldeniz tarafından geliştirilmiştir.*
+3. **Frontend**: `UrlShortenerUI` klasörüne gidin, `npm install` ve ardından `npm run dev` komutlarını çalıştırın. 
