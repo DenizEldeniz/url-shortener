@@ -91,7 +91,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="app-content">
-        
+
         {/* Header */}
         <div className="header">
           <div className="header-icon">
@@ -105,7 +105,7 @@ function App() {
 
         {/* Main Card */}
         <div className="main-card">
-          
+
           {/* Form */}
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
@@ -213,7 +213,7 @@ function App() {
         {/* Footer */}
         <div className="footer">
           <p className="footer-text">Hızlı, güvenli ve ücretsiz URL kısaltma servisi</p>
-          <p className="footer-meta">© {year} UrlShortener. Tüm hakları saklıdır.</p>
+          <p className="footer-meta">© {year} UrlKısaltma. Tüm hakları saklıdır.</p>
         </div>
       </div>
 
@@ -223,28 +223,28 @@ function App() {
         <nav className="by-links" aria-label="Sosyal bağlantılar">
           <a className="by-link" href="https://www.linkedin.com/in/denizeldeniz/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <svg className="by-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM0.5 8H4.5V23H0.5V8ZM8 8H12v2.1h.1c.56-1.06 1.93-2.18 3.98-2.18C20.2 7.92 22 10.2 22 14.32V23h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V23H8V8Z"/>
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM0.5 8H4.5V23H0.5V8ZM8 8H12v2.1h.1c.56-1.06 1.93-2.18 3.98-2.18C20.2 7.92 22 10.2 22 14.32V23h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V23H8V8Z" />
             </svg>
           </a>
           <a className="by-link" href="https://github.com/DenizEldeniz" target="_blank" rel="noreferrer" aria-label="GitHub">
             <svg className="by-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 .5C5.73.5.75 5.7.75 12.12c0 5.15 3.34 9.52 7.97 11.06.58.11.79-.26.79-.57v-2.1c-3.24.73-3.92-1.6-3.92-1.6-.53-1.39-1.3-1.76-1.3-1.76-1.06-.75.08-.74.08-.74 1.17.08 1.79 1.25 1.79 1.25 1.04 1.83 2.73 1.3 3.4.99.11-.78.4-1.3.73-1.6-2.59-.3-5.32-1.34-5.32-5.96 0-1.32.45-2.4 1.2-3.25-.12-.3-.52-1.52.11-3.17 0 0 .98-.32 3.2 1.24a10.7 10.7 0 0 1 2.92-.4c.99 0 1.99.14 2.92.4 2.22-1.56 3.2-1.24 3.2-1.24.63 1.65.23 2.87.11 3.17.75.85 1.2 1.93 1.2 3.25 0 4.63-2.74 5.66-5.35 5.96.41.37.78 1.1.78 2.23v3.3c0 .31.21.69.79.57 4.63-1.54 7.97-5.91 7.97-11.06C23.25 5.7 18.27.5 12 .5Z"/>
+              <path d="M12 .5C5.73.5.75 5.7.75 12.12c0 5.15 3.34 9.52 7.97 11.06.58.11.79-.26.79-.57v-2.1c-3.24.73-3.92-1.6-3.92-1.6-.53-1.39-1.3-1.76-1.3-1.76-1.06-.75.08-.74.08-.74 1.17.08 1.79 1.25 1.79 1.25 1.04 1.83 2.73 1.3 3.4.99.11-.78.4-1.3.73-1.6-2.59-.3-5.32-1.34-5.32-5.96 0-1.32.45-2.4 1.2-3.25-.12-.3-.52-1.52.11-3.17 0 0 .98-.32 3.2 1.24a10.7 10.7 0 0 1 2.92-.4c.99 0 1.99.14 2.92.4 2.22-1.56 3.2-1.24 3.2-1.24.63 1.65.23 2.87.11 3.17.75.85 1.2 1.93 1.2 3.25 0 4.63-2.74 5.66-5.35 5.96.41.37.78 1.1.78 2.23v3.3c0 .31.21.69.79.57 4.63-1.54 7.97-5.91 7.97-11.06C23.25 5.7 18.27.5 12 .5Z" />
             </svg>
           </a>
           <a className="by-link" href="https://www.instagram.com/deldenizx/" target="_blank" rel="noreferrer" aria-label="Instagram">
             <svg className="by-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+              <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
             </svg>
           </a>
           <a className="by-link" href="mailto:denizeldeniz07@gmail.com" aria-label="E-posta">
             <svg className="by-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 5-8-5V6l8 5 8-5v2.2Z"/>
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 5-8-5V6l8 5 8-5v2.2Z" />
             </svg>
           </a>
           <a className="by-link by-sushi" href="https://www.youtube.com/watch?v=6POZlJAZsok" target="_blank" rel="noreferrer" title="Sushi" aria-label="Sushi">
             <svg className="by-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M4 10c0-2.2 3.6-4 8-4s8 1.8 8 4-3.6 4-8 4-8-1.8-8-4Zm8 2.5c4.6 0 6.5-1.7 6.5-2.5S16.6 7.5 12 7.5 5.5 9.2 5.5 10s1.9 2.5 6.5 2.5Z"/>
-              <path d="M5 13.2c1.8 1.2 4.3 1.8 7 1.8s5.2-.6 7-1.8V16c0 2.2-3.6 4-8 4s-8-1.8-8-4v-2.8Zm7 5.3c4.6 0 6.5-1.7 6.5-2.5v-1c-1.9 1-4.3 1.5-6.5 1.5S7.4 16 5.5 15v1c0 .8 1.9 2.5 6.5 2.5Z"/>
+              <path d="M4 10c0-2.2 3.6-4 8-4s8 1.8 8 4-3.6 4-8 4-8-1.8-8-4Zm8 2.5c4.6 0 6.5-1.7 6.5-2.5S16.6 7.5 12 7.5 5.5 9.2 5.5 10s1.9 2.5 6.5 2.5Z" />
+              <path d="M5 13.2c1.8 1.2 4.3 1.8 7 1.8s5.2-.6 7-1.8V16c0 2.2-3.6 4-8 4s-8-1.8-8-4v-2.8Zm7 5.3c4.6 0 6.5-1.7 6.5-2.5v-1c-1.9 1-4.3 1.5-6.5 1.5S7.4 16 5.5 15v1c0 .8 1.9 2.5 6.5 2.5Z" />
             </svg>
           </a>
         </nav>
