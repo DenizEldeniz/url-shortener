@@ -7,7 +7,6 @@ namespace UrlShortenerApi.Services
     {
         private readonly IMongoCollection<UrlMapping> _urls;
         private const string Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        // UrlService singleton olduğu için thread-safety adına Random.Shared kullanıyoruz.
         private static readonly Random _random = Random.Shared;
         private const int MaxInsertAttempts = 10;
 
@@ -17,7 +16,6 @@ namespace UrlShortenerApi.Services
             var database = mongoClient.GetDatabase("UrlShortenerDb");
             _urls = database.GetCollection<UrlMapping>("Urls");
 
-            // ShortCode üzerine unique index atayalım
             var indexKeys = Builders<UrlMapping>.IndexKeys.Ascending(x => x.ShortCode);
             var indexOptions = new CreateIndexOptions { Unique = true };
             var model = new CreateIndexModel<UrlMapping>(indexKeys, indexOptions);
@@ -26,7 +24,6 @@ namespace UrlShortenerApi.Services
 
         public async Task<UrlMapping> CreateShortUrlAsync(string originalUrl)
         {
-            // Duplicate key (ShortCode unique index) durumunda tekrar deneyelim.
             for (var attempt = 1; attempt <= MaxInsertAttempts; attempt++)
             {
                 var code = GenerateCode();
@@ -44,7 +41,6 @@ namespace UrlShortenerApi.Services
                 }
                 catch (MongoWriteException ex) when (IsDuplicateKey(ex))
                 {
-                    // Çakışma oldu → yeni kod üretip tekrar dene.
                 }
             }
 
@@ -59,7 +55,6 @@ namespace UrlShortenerApi.Services
 
         private static bool IsDuplicateKey(MongoWriteException ex)
         {
-            // MongoDB duplicate key için yaygın kod: 11000
             return ex.WriteError?.Category == ServerErrorCategory.DuplicateKey
                    || ex.WriteError?.Code == 11000;
         }

@@ -16,10 +16,6 @@ function App() {
     setError('');
     setCopied(false);
     setLoading(true);
-    // setShortUrl(''); // Don't clear immediately to avoid flickering
-    // setShortCode('');
-    // setClickCount(null);
-
     try {
       const response = await fetch('http://localhost:5072/api/shorten', {
         method: 'POST',
@@ -49,7 +45,6 @@ function App() {
     }
   };
 
-  // Otomatik yenileme: kısa kod oluştuysa belirli aralıklarla clickCount güncelle.
   useEffect(() => {
     if (!shortCode) return;
 
@@ -62,17 +57,17 @@ function App() {
         const data = await res.json();
         if (!cancelled && typeof data.clickCount === 'number') setClickCount(data.clickCount);
       } catch {
-        // sessizce geç
+
       }
     };
 
-    // İlk anda bir kez yenile
+
     refreshSilent();
 
-    // Her 5 saniyede bir yenile
+
     const intervalId = window.setInterval(refreshSilent, 5000);
 
-    // Sekmeye geri dönünce (focus) bir kez yenile
+
     const onVisibilityChange = () => {
       if (document.visibilityState === 'visible') refreshSilent();
     };
@@ -95,7 +90,6 @@ function App() {
     <div className="app-container">
       <div className="app-content">
 
-        {/* Header */}
         <div className="header">
           <div className="header-icon">
             <svg className="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -106,10 +100,8 @@ function App() {
           <p className="subtitle">Linklerinizi kısaltın, paylaşın ve kolayca yönetin</p>
         </div>
 
-        {/* Main Card */}
         <div className="main-card">
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
               <label className="form-label">
@@ -154,7 +146,6 @@ function App() {
             </div>
           </form>
 
-          {/* Error Message */}
           {error && (
             <div className="error-message">
               <div className="error-content">
@@ -166,7 +157,6 @@ function App() {
             </div>
           )}
 
-          {/* Result Area */}
           {shortUrl && (
             <div className="result-area">
               <div className="result-header">
@@ -212,7 +202,6 @@ function App() {
           )}
         </div>
 
-        {/* Footer */}
         <div className="footer">
           <p className="footer-text">Hızlı, güvenli ve ücretsiz URL kısaltma servisi</p>
           <p className="footer-meta">© {year} UrlKısaltma. Tüm hakları saklıdır.</p>
